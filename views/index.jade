@@ -1,16 +1,40 @@
 include ./includes/header.jade
 body.sticky-nav
   include ./includes/site-header.jade
-  .header-image.bg-purple.no-padding.no-overlay
-    .container
-      br
-      h1 <strong>Elastic,</strong> Next-Generation Cloud Computing
-      h4 Elastic is a crypto-currency driven infrastructure for decentralized computation. It is a free, non-commercial and independent open source project with contributors from around the world.
-      br
-  main
+  div.master-slider.ms-skin-default#masterslider
+   div.ms-slide.slide-1(data-delay="10")
+    img(src='masterslider/blank.gif',data-src="masterslider/sldr-imgs/slider1/bg.jpg")
+    h3.ms-layer.hps-title1(style="left:1032px;top:197px",data-type="text",data-delay="500",data-duration="2400",data-ease="easeInOutQuart",data-effect="left(250)") What is Elastic?
+    h3.ms-layer.hps-title2(style="left:1032px;top:257px;",data-type="text",data-delay="650",data-duration="2400",data-ease="easeInOutQuart",data-effect="left(250)") Watch The Video!
+    img.ms-layer(src='masterslider/blank.gif',data-src="masterslider/sldr-imgs/slider1/video-shadow.png",style="left:298px; top:435px;",data-type="image",data-duration="3000",data-ease="easeOutExpo")
+    div.ms-layer.video-box(style="left:370px;top:105px;width:662px;height:372px",data-type="video",data-effect="top(100)",data-duration="3000",data-ease="easeOutExpo")
+     img(src='masterslider/blank.gif',data-src="masterslider/sldr-imgs/slider1/video-cover.jpg")
+     iframe(src='https://player.vimeo.com/video/157901432?autoplay=1&color=a788d7&title=0&byline=0&portrait=0', width='500', height='281', frameborder='0', webkitallowfullscreen='', mozallowfullscreen='', allowfullscreen='')
+   div.ms-slide.slide-2(data-delay="10")
+    img(src='masterslider/blank.gif',data-src="masterslider/sldr-imgs/slider2/bg.jpg")
+    img.ms-layer(src='masterslider/blank.gif',data-src="masterslider/sldr-imgs/slider2/plane1.png",style="left:141px; top:151px;",data-type="image",data-effect="left(200)",data-ease="easeOutQuart",data-duration="2200")
+    img.ms-layer(src='masterslider/blank.gif',data-src="masterslider/sldr-imgs/slider2/plane4.png",style="left:100px; top:50px;",data-type="image",data-effect="left(200)",data-ease="easeOutQuart",data-duration="2200",data-hide-effect="top(23,false)",data-hide-time="2301",data-hide-duration="3500",data-hide-ease="easeInOutQuart")
+    img.ms-layer(src='masterslider/blank.gif',data-src="masterslider/sldr-imgs/slider2/plane2.png",style="left:100px; top:50px;",data-type="image",data-effect="left(200)",data-ease="easeOutQuart",data-duration="2200",data-hide-effect="top(30,false)",data-hide-time="2301",data-hide-duration="3500",data-hide-ease="easeInOutQuart")
+    img.ms-layer(src='masterslider/blank.gif',data-src="masterslider/sldr-imgs/slider2/plane3.png",style="left:100px; top:50px;",data-type="image",data-effect="left(200)",data-ease="easeOutQuart",data-duration="2200",data-hide-effect="top(30,false)",data-hide-time="2301",data-hide-duration="3500",data-hide-ease="easeInOutQuart")
+    h3.ms-layer.hps-title1(style="left: 930px;top: 200px;",data-type="text",data-delay="2000",data-duration="2200",data-ease="easeOutExpo",data-effect="skewleft(50,340)") How does Elastic Work?
+    h3.ms-layer.hps-text1(style="left: 930px;top: 240px;",data-type="text",data-delay="2500",data-duration="2200",data-ease="easeOutExpo",data-effect="skewright(50,340)") For detailed information
+    h3.ms-layer.hps-title3(style="left: 930px;top: 267px;",data-type="text",data-delay="3000",data-duration="2200",data-ease="easeOutExpo",data-effect="rotate3dbottom(100,0,0,70)") #[a(href="https://github.com/elastic-project/whitepaper/raw/master/whitepaper.pdf") READ WHITEPAPER!]
+    p.ms-layer.hps-text1(style="left: 930px; top: 330px;",data-type="text",data-delay="3600",data-ease="easeOutExpo",data-effect="left(50)",data-duration="2300") * Scientists submit their computational intensive work to Elastic<br>* Miners contribute computational power to the submitted problems<br>* For their contribution, miners are rewarded with Elastic Coins<br>* Elastic coins can be used just like any other crypto currency out there: you can send, receive and trade coins freely.
+   div.ms-slide.slide-3(data-delay="10")
+    img(src='masterslider/blank.gif',data-src="masterslider/sldr-imgs/slider3/bg.jpg")
+    h3.ms-layer.hps-title1(style="left:660px;top:136px;",data-type="text",data-delay="2000",data-duration="1400",data-ease="easeOutExpo",data-effect="skewleft(30,80)") You want to get some Elastic Coins before the project goes live?
+    h3.ms-layer.hps-title3(style="left:762px;top:280px;",data-type="text",data-delay="2900",data-duration="2400",data-ease="easeOutExpo",data-effect="rotate3dtop(-100,0,0,40,t)") #[a(href="/crowdsale") Click Here!]
+    h3.ms-layer.hps-title4(style="left:762px;top:337px;",data-type="text",data-delay="3100",data-duration="2800",data-ease="easeOutExpo",data-effect="rotate3dtop(-100,0,0,18,t)")
+     span#buyer_btc ---
+     span  BTC &rarr; 
+     span Donated by <span id="buyer_count">--</span> people 
+    img.ms-layer(src='masterslider/blank.gif',data-src="masterslider/sldr-imgs/slider3/part-1.png",style="left:426px;top:252px;",data-type="image",data-duration="8000",data-ease="easeOutExpo",data-delay="200",data-effect="scalefrom(0.4,0.4,180,300,br)")
+    img.ms-layer(src='masterslider/blank.gif',data-src="masterslider/sldr-imgs/slider3/part-2.png",style="left:424px;top:261px;",data-type="image",data-duration="8200",data-ease="easeOutExpo",data-delay="150",data-effect="scalefrom(0.3,0.3,180,300,br)")
+    img.ms-layer(src='masterslider/blank.gif',data-src="masterslider/sldr-imgs/slider3/arrow.png",style="left:345px;top:103px;",data-type="image",data-duration="5000",data-ease="easeOutExpo",data-delay="0",data-effect="scalefrom(0.7,0.7,380,450,br,false)")
+ main
     section#sec-1
       div.row(style="margin-top: -50px; padding-right: 20px;")
-        div.col-xs-6(style="padding-left:60px; padding-right: 60px;")
+        div.col-xs-12(style="padding-left:60px; padding-right: 60px;")
           header.section-header(style="margin-bottom: 0px")
             span Why is Elastic so Awesome?
           ul.features
@@ -34,8 +58,6 @@ body.sticky-nav
               p
                 | Elastic claims that the price for computational power is market driven. Think of it as an auction where buyers of computational resources (such as scientists) outbid each other to have their work solved. This is very profitable for the miners. 
 
-        div.col-xs-6.video
-          .video
-            iframe(src='https://player.vimeo.com/video/157901432?autoplay=0&color=a788d7&title=0&byline=0&portrait=0', width='500', height='281', frameborder='0', webkitallowfullscreen='', mozallowfullscreen='', allowfullscreen='')
-
 include ./includes/footer.jade
+
+
