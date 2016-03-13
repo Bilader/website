@@ -21,7 +21,7 @@ body.sticky-nav
             a(href='/faq') FAQ
           li
             a.menu-highlighted(href='https://github.com/elastic-project/whitepaper/raw/master/whitepaper.pdf') Whitepaper
-  .header-image.bg-purple.no-padding.no-overlay
+  .header-image.bg-purple.no-padding.no-overlay(style="background-image: url(img/csalebg.jpg);")
     .container
       .row
         br
@@ -32,7 +32,7 @@ body.sticky-nav
             span  BTC
           h6 Donated by <span id="buyer_count">--</span> people
         .counter.col-xs-6.col-md-4
-          i.fa.fa-percent(style="color: white")
+          i.fa.fa-pie-chart(style="color: white")
           p(style="color: white")
             span#buyer_percent -,--
             span  %
@@ -46,7 +46,7 @@ body.sticky-nav
         br
   main
   section#sec-quick-start
-   .container(style="margin-top: -40px; padding-right: 20px;")
+   .container(style="margin-top: -40px; ")
      p.text-cols-2.text-justify
       | <strong>Donations</strong> are now being accepted for the upkeep and support of Elastic. Please understand that no shares in a company are offered here and no promises about any future rewards are made. Your BTC payment is an altruistic donation with no legal (or other) obligations or guarantees of either side tied to it. Still, we give away a certain amount of Elastic Coins (ELC) <i>voluntarily</i> to those who support Elastic and record it in the so-called genesis block. This will later be used as the first block in the blockchain and distribute the Elastic Coins in circulation. Once we have added you to the genesis block, our voluntary action is finished. Please do not consider Elastic Coins (ELC) to be shares, futures, certificates, securities, bonds, treasures, profit-sharing agreements, or anything similar. All donations are strictly non-refundable.
       .col-xs-6
@@ -57,7 +57,7 @@ body.sticky-nav
           a(href='https://raw.githubusercontent.com/elastic-project/genesis-block/master/genesis-block.json') genesis block repository on Github
           | .
           #chart2.one-third.inline-chart(style="width:490; margin-bottom: 0px; margin-top: 25px;")
-          | <br><br> You can calculate the exact number using the formula below:<br>(<i>b</i> is the block # in which your transaction appears for the first time)<br><br><img style="margin-left: 50px;" src=eqn.png> <!--f(b)=\max(\min(-\frac{4000}{25920}\cdot(b-400000)+8000,8000),0) -->
+          | <br><br> You can calculate the exact number using the formula below:<br>(<i>b</i> is the block # in which your transaction appears for the first time)<br><br><img src=eqn.png> <!--f(b)=\max(\min(-\frac{4000}{25920}\cdot(b-400000)+8000,8000),0) -->
       .col-xs-6
         .callout.callout-info(role='alert')
           h4 Get Started
@@ -66,7 +66,7 @@ body.sticky-nav
               .col-xs-3
                 | <img src="qr.png"/>
               .col-xs-9
-                p(style="font-family: monospace;font-size: 18px;font-style: normal;") 3Q2aKEGFTKDw3hghsBifXp39CZVMtZukxn
+                p(style="font-family: monospace;font-size:18px;") <span id="adr">3Q2aKEGFTKDw3hghsBifXp39CZVMtZukxn</span>
                 | Donators need to send a BTC transaction to the BTC address above <font color=red><b>(2 of 2 multisignature offline storage)</b></font>. The minimum amount is 0.01 BTC. All donations are non-refundable. Your ELC are credited to the public key(s) associated with your bitcoin address.
         .callout.callout-danger(role='warning')
           h4 Important Hints

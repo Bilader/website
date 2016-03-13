@@ -21,8 +21,9 @@ section#sec-1 .row .col-xs-6:nth-of-type(2){-webkit-box-ordinal-group: 1;-moz-bo
  
   
 /* crowdsalepage */ 
- img[src^="eqn.png"] {}
+ img[src^="eqn.png"] {display: block;margin: 0 auto;padding-bottom:20px}
  img[src^="qr.png"] {display: block;margin: 0 auto;padding-bottom:20px}
+ #adr{font-size: 15px;}
 /* crowdsalepage */ 
 
 
